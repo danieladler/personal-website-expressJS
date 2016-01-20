@@ -1,0 +1,51 @@
+// variables
+$border: rgb(175, 175, 175);
+
+// whole page
+
+div {
+  margin-bottom: 10px;
+}
+
+// landing section
+
+.top-row::before {
+  content: "";
+  background: rgb(90, 178, 235);
+  transform: rotate(-10deg);
+  margin-top: -170px;
+  position: absolute;
+  top: 0;
+  right: -20%;
+  left: -20%;
+  bottom: 350px;
+  z-index: -1;
+}
+
+.top {
+  height: 450px;
+  color: white;
+  font-family: "Helvetica"
+}
+
+#header {
+  margin: 0 auto;
+  width: 800px;
+  text-align: center;
+  font-size: 40px;
+}
+
+// bio
+
+.bio {
+  border: 1px solid $border;
+}
+
+// portfolio pieces
+
+.portfolio {
+  border: 1px solid $border;
+  height: 100px;
+}
+
+// footer

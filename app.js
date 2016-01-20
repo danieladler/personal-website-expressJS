@@ -9,7 +9,7 @@ app.use(express.static('public'));
 
 // routes
 app.get("/", function (req, res) {
-  res.render('index', {title: "dadler codes", message: "content here"})
+  res.render('index', {title: "dadler codes", message: "dadler codes"})
 });
 
 app.listen(3000, function() {
