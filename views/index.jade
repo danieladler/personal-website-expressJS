@@ -1,31 +1,28 @@
-html
-  head
-    title!= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+extends layout
 
-  body
-    .top-row
-      p
-      
-    .top
-      #header
-        h1!= message
+block content
+  .top-row
+    p
 
-      p eventually, a splash image
+  .top
+    #header
+      h1!= message
 
-      h5 @bottom: small call to action that gives affordance for scrolling down
+    p eventually, a splash image
 
-    .bio
-      h3.
-        basic bio text about me
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+    h5 @bottom: small call to action that gives affordance for scrolling down
 
-    .portfolio  [PORTFOLIO - SECTION 1]
+  .bio
+    h3.
+      basic bio text about me
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
 
-    .portfolio [PORTFOLIO - SECTION 2]
+  .portfolio  [PORTFOLIO - SECTION 1]
 
-    .video [CAT VIDEO]
+  .portfolio [PORTFOLIO - SECTION 2]
 
-    .portfolio [PORTFOLIO - SECTION 3]
+  .video [CAT VIDEO]
 
-    .footer [FOOTER]
+  .portfolio [PORTFOLIO - SECTION 3]
+
+  .footer [FOOTER]
