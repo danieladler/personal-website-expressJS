@@ -27,8 +27,30 @@ body {
 
     h1#title {
       margin-top: 0;
+      padding-top: 20px;
       text-align: center;
       color: white;
+      font-size: 72px;
+    }
+
+    #statement-container {
+      display: table;
+      height: 75%;
+      position: absolute;
+      overflow: hidden;
+      width: 100%;
+
+      #helper {
+        display: table-cell;
+        vertical-align: middle;
+
+        h2#statement {
+          margin: 0 auto;
+          text-align: center;
+          font-size: 48px;
+          max-width: 900px;
+        }
+      }
     }
 
     h5#cta {
@@ -73,8 +95,16 @@ body {
 // bio
 
 #bio {
-  height: 100px;
+  margin: 20px 0;
+
+  #bio-text {
+    margin: 0 auto;
+    max-width: 900px;
+    font-size: 32px;
+    line-height: 1.25;
+  }
 }
+
 
 // // portfolio pieces
 
