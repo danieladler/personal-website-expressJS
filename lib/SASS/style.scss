@@ -1,5 +1,6 @@
 // variables
 
+
 // whole page
 
 html,
@@ -49,6 +50,7 @@ body {
           text-align: center;
           font-size: 48px;
           max-width: 900px;
+          color: white;
         }
       }
     }
@@ -60,11 +62,21 @@ body {
       width: 100%;
       text-align: center;
       color: white;
+
+      .header-link {
+        padding: 0 20px;
+        color: white;
+
+        &:hover {
+          text-decoration: none;
+          color: orange;
+        }
+      }
     }
 }
 
 #content {
-  padding-bottom: 200px;
+  padding-bottom: 70px;
 }
 
 // landing section
@@ -109,8 +121,7 @@ body {
 // // portfolio pieces
 
 .portfolio {
-  height: 300px;
-  margin-bottom: 10px;
+  height: 600px;
 }
 
 #p1 {
@@ -137,7 +148,48 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 200px;
+  height: 70px;
   width: 100%;
   background: gray;
+
+  #footer-main {
+    margin: 0 auto;
+    width: 1100px;
+
+    #footer-left {
+      display: inline-block;
+      float: left;
+      width: 400px;
+      margin: 0 auto;
+
+      .icon {
+        display: inline-block;
+        padding: 20px;
+        height: 30px;
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.33);
+        }
+      }
+    }
+
+    #footer-right{
+      display: inline-block;
+      float: right;
+      width: 400px;
+      margin: 0 auto;
+
+      a.footer-link {
+        display: inline-block;
+        font-size: 22px;
+        color: white;
+        padding: 25px 20px;
+
+        &:hover {
+          color: orange;
+          text-decoration: none;
+        }
+      }
+    }
+  }
 }

@@ -3,26 +3,48 @@ extends layout
 block content
 
   #header
+    a#top-link.smooth
     #header-content
       h1#title      dadler codes
       #statement-container
         #helper
           h2#statement  something snappy about me
-      h5#cta        v v v call to action v v v
+      h5#cta
+        a(href="#about-link").header-link     about
+        a(href="#portfolio-link").header-link portfolio
 
   #content
     #bio
+      a#about-link.smooth
       p#bio-text
         | Lorem ipsum dolor sit amet, consectetur adipisicing elit,
         | sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         | Lorem ipsum dolor sit amet.
 
-    #p1.portfolio: p portfolio
+    #p1.portfolio
+      a#portfolio-link.smooth
 
-    #p2.portfolio: p portfolio
+    #p2.portfolio
 
-    #video: p video
+    #video
 
-    #p3.portfolio: p portfolio
+    #p3.portfolio
 
-  #footer: p footer
+  #footer
+    #footer-main
+      #footer-left
+        a(href="https://github.com/danieladler/")
+          img(src="images/github.svg").icon
+        a(href="http://twitter.com/adlerography")
+          img(src="images/twitter.svg").icon
+        a(href="http://instagram.com/dadler")
+          img(src="images/instagram.svg").icon
+        a(href="https://www.linkedin.com/pub/daniel-adler/13/a59/a45")
+          img(src="images/linkedin.svg").icon
+        a(href="mailto:hello@dadler.codes")
+          img(src="images/email.svg").icon
+
+      #footer-right
+        a(href="#top-link").footer-link       dadler codes
+        a(href="#about-link").footer-link     about
+        a(href="#portfolio-link").footer-link portfolio
