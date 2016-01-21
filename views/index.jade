@@ -1,33 +1,21 @@
 extends layout
 
 block content
-  .top-row
-    p
 
-  .top
-    #header
-      h1!= message
+  #header
+    #header-content
+      h1#title dadler codes
+      h5#cta   v v v call to action v v v 
 
-    p eventually, a splash image
+  #content
+    #bio: p bio
 
-    h5 @bottom: small call to action that gives affordance for scrolling down
+    #p1.portfolio: p portfolio
 
-  .bio
-    h3.
-      basic bio text about me
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+    #p2.portfolio: p portfolio
 
-  #p1.portfolio
-    p [PORTFOLIO - SECTION 1]
+    #video: p video
 
-  #p2.portfolio
-    p [PORTFOLIO - SECTION 2]
+    #p3.portfolio: p portfolio
 
-  #video
-    p [CAT VIDEO]
-
-  #p3.portfolio
-    p [PORTFOLIO - SECTION 3]
-
-  #footer
-    p [FOOTER]
+  #footer: p footer

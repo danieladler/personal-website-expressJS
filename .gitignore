@@ -1,1 +1,4 @@
 /node_modules
+/public/images
+/views/index1.jade
+.DS_store

@@ -1,35 +1,61 @@
-div {
-  margin-bottom: 10px; }
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%; }
 
-.top-row::before {
-  content: "";
-  background: #5ab2eb;
-  transform: rotate(-10deg);
-  margin-top: -170px;
-  position: absolute;
-  top: 0;
-  right: -20%;
-  left: -20%;
-  bottom: 350px;
-  z-index: -1; }
-
-.top {
-  height: 450px;
-  color: white;
-  font-family: "Helvetica"; }
+#wrapper {
+  min-height: 100%;
+  position: relative; }
 
 #header {
-  margin: 0 auto;
-  width: 800px;
-  text-align: center;
-  font-size: 40px;
-  padding-bottom: 50px; }
+  background: gray;
+  height: 100vh; }
+  #header #header-content {
+    background: url(/images/grass.jpg) no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: relative; }
+  #header h1#title {
+    margin-top: 0;
+    text-align: center;
+    color: white; }
+  #header h5#cta {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white; }
 
-.bio {
-  border: 1px solid #afafaf; }
+#content {
+  padding-bottom: 200px; }
+
+#bio {
+  height: 100px; }
 
 .portfolio {
-  border: 1px solid #afafaf;
+  height: 300px;
+  margin-bottom: 10px; }
+
+#p1 {
+  background: #ffdcaf; }
+
+#p2 {
+  background: #c1ffaf; }
+
+#p3 {
+  background: #6cd7ee; }
+
+#video {
   height: 100px; }
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 200px;
+  width: 100%;
+  background: gray; }
 
 /*# sourceMappingURL=style.css.map */

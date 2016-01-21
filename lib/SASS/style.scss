@@ -1,52 +1,113 @@
 // variables
-$border: rgb(175, 175, 175);
 
 // whole page
 
-div {
-  margin-bottom: 10px;
+html,
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+}
+
+#wrapper {
+	min-height:100%;
+	position:relative;
+}
+
+#header {
+  background: gray;
+  height: 100vh;
+
+  #header-content {
+    background: url(/images/grass.jpg) no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+  }
+
+    h1#title {
+      margin-top: 0;
+      text-align: center;
+      color: white;
+    }
+
+    h5#cta {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      color: white;
+    }
+}
+
+#content {
+  padding-bottom: 200px;
 }
 
 // landing section
 
-.top-row::before {
-  content: "";
-  background: rgb(90, 178, 235);
-  transform: rotate(-10deg);
-  margin-top: -170px;
-  position: absolute;
-  top: 0;
-  right: -20%;
-  left: -20%;
-  bottom: 350px;
-  z-index: -1;
-}
+// .top-row::before {
+//   content: "";
+//   background: rgb(90, 178, 235);
+//   transform: rotate(-10deg);
+//   margin-top: -170px;
+//   position: absolute;
+//   top: 0;
+//   right: -20%;
+//   left: -20%;
+//   bottom: 750px;
+//   z-index: -1;
+// }
 
-.top {
-  height: 450px;
-  color: white;
-  font-family: "Helvetica"
-}
-
-#header {
-  margin: 0 auto;
-  width: 800px;
-  text-align: center;
-  font-size: 40px;
-  padding-bottom: 50px;
-}
+// .title-container {
+//   height: 100px;
+//   color: black;
+//   font-family: "Helvetica";
+//   margin: 0 auto;
+//   width: 800px;
+//   text-align: center;
+//   font-size: 40px;
+// }
 
 // bio
 
-.bio {
-  border: 1px solid $border;
-}
-
-// portfolio pieces
-
-.portfolio {
-  border: 1px solid $border;
+#bio {
   height: 100px;
 }
 
-// footer
+// // portfolio pieces
+
+.portfolio {
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+#p1 {
+  background: rgb(255, 220, 175);
+}
+
+#p2 {
+  background: rgb(193, 255, 175);
+}
+
+#p3 {
+  background:rgb(108, 215, 238);
+}
+
+//video
+
+#video {
+  height: 100px;
+}
+
+//footer
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 200px;
+  width: 100%;
+  background: gray;
+}
