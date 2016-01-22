@@ -109,6 +109,9 @@ body {
 }
 
 .content-portfolio {
+	position: relative;
+	height:100%;
+
   h1 {
     font-size: 56px;
     padding-bottom: 12px;
@@ -120,6 +123,31 @@ body {
     font-size: 26px;
     line-height: 1.25;
   }
+
+	.tag-container {
+		position: absolute;
+		bottom: 0;
+
+		li {
+			width: 200px;
+			list-style-type: none;
+			font-size: 18px;
+			display: inline-block;
+			float: left;
+		}
+
+		li:before {
+			content:'\25A0';
+		  display: block;
+		  position: relative;
+		  max-width: 0;
+		  max-height: 0;
+		  left: -15px;
+		  top: -2.5px;
+		  color: $accent-primary;
+		  font-size: 20px;
+		}
+	}
 }
 
 #p1 {
@@ -143,7 +171,7 @@ body {
 	background-color: $gray-background;
 	border-top: 1px solid $gray-border;
 	border-bottom: 1px solid $gray-border;
-	padding: 40px 0;
+	padding: 70px 0;
 
 	.container {
     height: 100%;
@@ -155,6 +183,15 @@ body {
     p {
       text-align: right;
     }
+
+		.tag-container {
+			right: 0;
+			text-align: right;
+
+			li:before {
+			  left: 140px;
+			}
+		}
 
     #shape-p2 {
       background: black url(/images/grass.jpg) no-repeat;
@@ -170,7 +207,7 @@ body {
 }
 
 #p3 {
-  margin-bottom: 20px;
+  margin-bottom: 70px;
 
   .container {
     height: 100%;

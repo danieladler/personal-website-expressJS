@@ -3,26 +3,26 @@ extends layout
 block content
 
   #header
-    a#top-link.smooth
+    a#top.smooth
     #header-content
       h1#title      dadler codes
       #statement-container
         #helper
           h2#statement  something snappy about me
       h5#cta
-        a(href="#about-link").header-link     about
-        a(href="#portfolio-link").header-link portfolio
+        a(href="#about").header-link     about
+        a(href="#portfolio").header-link portfolio
 
   #content
     #bio
-      a#about-link.smooth
+      a#about.smooth
       p#bio-text
         | Lorem ipsum dolor sit amet, consectetur adipisicing elit,
         | sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         | Lorem ipsum dolor sit amet.
 
     #p1.portfolio
-      a#portfolio-link.smooth
+      a#portfolio.smooth
       .container
         #shape-p1
         .content-portfolio
@@ -34,6 +34,11 @@ block content
              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          ul.tag-container
+            li Rails w/ postgresql
+
+
+
 
     #p2.portfolio
       .container
@@ -47,6 +52,11 @@ block content
              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          ul.tag-container
+            li skill 1
+            li skill 2
+            li skill 3
+
 
     #p3.portfolio
       .container
@@ -60,8 +70,11 @@ block content
              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          ul.tag-container
+            li skill 1
+            li skill 2
 
-    #video: h1 video will go here!
+    #video: h1 non-sequitur cat video will go here!
 
   #footer
     #footer-main
@@ -78,6 +91,6 @@ block content
           img(src="images/email.svg").icon
 
       #footer-right
-        a(href="#top-link").footer-link       dadler codes
-        a(href="#about-link").footer-link     about
-        a(href="#portfolio-link").footer-link portfolio
+        a(href="#top").footer-link       dadler codes
+        a(href="#about").footer-link     about
+        a(href="#portfolio").footer-link portfolio
