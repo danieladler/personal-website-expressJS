@@ -13,7 +13,7 @@ body {
   background: gray;
   height: 100vh; }
   #header #header-content {
-    background: url(/images/grass.jpg) no-repeat;
+    background: url("https://s3-us-west-2.amazonaws.com/dadler-codes/expressJS-development/grass.jpg") no-repeat;
     background-size: cover;
     height: 100%;
     position: relative; }
@@ -105,7 +105,7 @@ body {
 #p1 .container {
   height: 100%; }
   #p1 .container #shape-p1 {
-    background: black url(/images/grass.jpg) no-repeat;
+    background: black url("https://s3-us-west-2.amazonaws.com/dadler-codes/expressJS-development/grass.jpg") no-repeat;
     background-size: cover;
     height: 100%;
     width: 50%;
@@ -130,7 +130,7 @@ body {
       #p2 .container .tag-container li:before {
         left: 140px; }
     #p2 .container #shape-p2 {
-      background: black url(/images/grass.jpg) no-repeat;
+      background: black url("https://s3-us-west-2.amazonaws.com/dadler-codes/expressJS-development/grass.jpg") no-repeat;
       background-size: cover;
       height: 100%;
       width: 50%;
@@ -144,7 +144,7 @@ body {
   #p3 .container {
     height: 100%; }
     #p3 .container #shape-p3 {
-      background: black url(/images/grass.jpg) no-repeat;
+      background: black url("https://s3-us-west-2.amazonaws.com/dadler-codes/expressJS-development/grass.jpg") no-repeat;
       background-size: cover;
       height: 100%;
       width: 50%;

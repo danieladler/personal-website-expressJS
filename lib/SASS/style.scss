@@ -3,6 +3,7 @@ $body-bottom-margin: 70px;
 $accent-primary: orange;
 $gray-background: rgba(230, 230, 230, 1);
 $gray-border:     rgba(230, 230, 230, 1);
+$grass-image: "https://s3-us-west-2.amazonaws.com/dadler-codes/expressJS-development/grass.jpg";
 
 // whole page
 
@@ -24,7 +25,7 @@ body {
   height: 100vh;
 
   #header-content {
-    background: url(/images/grass.jpg) no-repeat;
+    background: url($grass-image) no-repeat;
     // background: url(/images/grass-opaque.jpg) no-repeat;
     background-size: cover;
     height: 100%;
@@ -155,7 +156,7 @@ body {
     height: 100%;
 
     #shape-p1 {
-      background: black url(/images/grass.jpg) no-repeat;
+      background: black url($grass-image) no-repeat;
       background-size: cover;
       height:100%;
       width:50%;
@@ -194,7 +195,7 @@ body {
 		}
 
     #shape-p2 {
-      background: black url(/images/grass.jpg) no-repeat;
+      background: black url($grass-image) no-repeat;
       background-size: cover;
       height:100%;
       width:50%;
@@ -213,7 +214,7 @@ body {
     height: 100%;
 
     #shape-p3 {
-      background: black url(/images/grass.jpg) no-repeat;
+      background: black url($grass-image) no-repeat;
       background-size: cover;
       height:100%;
       width:50%;
