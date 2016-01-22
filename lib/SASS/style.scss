@@ -1,11 +1,21 @@
 // variables
 $body-bottom-margin: 70px;
-$accent-primary: orange;
+$accent-primary: #ffff65;
+$accent-secondary: #2898e9;
 $gray-background: rgba(230, 230, 230, 1);
 $gray-border:     rgba(230, 230, 230, 1);
 $grass-image: "https://s3-us-west-2.amazonaws.com/dadler-codes/expressJS-development/grass.jpg";
 
 // whole page
+
+@font-face {
+	font-family: 'Print Dashed';
+	src: url('/fonts/PrintDashed.eot');
+	src: url('/fonts/PrintDashed.eot?iefix') format('eot'),
+	     url('/fonts/PrintDashed.woff') format('woff'),
+	     url('/fonts/PrintDashed.ttf') format('truetype'),
+	     url('/fonts/PrintDashed.svg#PrintDashed') format('svg');
+}
 
 html,
 body {
@@ -26,7 +36,6 @@ body {
 
   #header-content {
     background: url($grass-image) no-repeat;
-    // background: url(/images/grass-opaque.jpg) no-repeat;
     background-size: cover;
     height: 100%;
     position: relative;
@@ -38,6 +47,8 @@ body {
       text-align: center;
       color: white;
       font-size: 72px;
+			font-family: "Print Dashed";
+			font-weight: 400;
     }
 
     #statement-container {
@@ -72,6 +83,7 @@ body {
       .header-link {
         padding: 0 20px;
         color: white;
+				font-size: 24px;
 
         &:hover {
           text-decoration: none;
@@ -145,7 +157,7 @@ body {
 		  max-height: 0;
 		  left: -15px;
 		  top: -2.5px;
-		  color: $accent-primary;
+		  color: $accent-secondary;
 		  font-size: 20px;
 		}
 	}
@@ -156,8 +168,9 @@ body {
     height: 100%;
 
     #shape-p1 {
-      background: black url($grass-image) no-repeat;
+      background: black url("https://s3-us-west-2.amazonaws.com/dadler-codes/expressJS-development/ps3.png") no-repeat;
       background-size: cover;
+      background-position: -80px ;
       height:100%;
       width:50%;
       float:right;
@@ -284,7 +297,6 @@ body {
         padding: 25px 20px;
 
         &:hover {
-          color: $accent-primary;
           text-decoration: none;
 					background: rgba(255, 255, 255, 0.33);
         }

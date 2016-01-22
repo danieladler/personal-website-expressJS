@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'Print Dashed';
+  src: url("/fonts/PrintDashed.eot");
+  src: url("/fonts/PrintDashed.eot?iefix") format("eot"), url("/fonts/PrintDashed.woff") format("woff"), url("/fonts/PrintDashed.ttf") format("truetype"), url("/fonts/PrintDashed.svg#PrintDashed") format("svg"); }
 html,
 body {
   margin: 0;
@@ -9,7 +13,7 @@ body {
   position: relative; }
 
 #header {
-  border-top: 5px solid orange;
+  border-top: 5px solid #ffff65;
   background: gray;
   height: 100vh; }
   #header #header-content {
@@ -22,7 +26,9 @@ body {
     padding-top: 30px;
     text-align: center;
     color: white;
-    font-size: 72px; }
+    font-size: 72px;
+    font-family: "Print Dashed";
+    font-weight: 400; }
   #header #statement-container {
     display: table;
     height: 75%;
@@ -47,10 +53,11 @@ body {
     text-align: center; }
     #header h5#cta .header-link {
       padding: 0 20px;
-      color: white; }
+      color: white;
+      font-size: 24px; }
       #header h5#cta .header-link:hover {
         text-decoration: none;
-        color: orange; }
+        color: #ffff65; }
 
 #content {
   padding-bottom: 70px; }
@@ -99,14 +106,15 @@ body {
       max-height: 0;
       left: -15px;
       top: -2.5px;
-      color: orange;
+      color: #2898e9;
       font-size: 20px; }
 
 #p1 .container {
   height: 100%; }
   #p1 .container #shape-p1 {
-    background: black url("https://s3-us-west-2.amazonaws.com/dadler-codes/expressJS-development/grass.jpg") no-repeat;
+    background: black url("https://s3-us-west-2.amazonaws.com/dadler-codes/expressJS-development/ps3.png") no-repeat;
     background-size: cover;
+    background-position: -80px;
     height: 100%;
     width: 50%;
     float: right;
@@ -192,7 +200,6 @@ body {
         color: white;
         padding: 25px 20px; }
         #footer #footer-main #footer-right a.footer-link:hover {
-          color: orange;
           text-decoration: none;
           background: rgba(255, 255, 255, 0.33); }
 
