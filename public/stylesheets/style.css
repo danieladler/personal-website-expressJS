@@ -65,17 +65,19 @@ body {
 
 .portfolio {
   height: 500px;
-  margin: 20px 0; }
+  margin-bottom: 70px; }
+
+.content-portfolio h1 {
+  font-size: 56px;
+  padding-bottom: 12px;
+  display: block; }
+.content-portfolio p {
+  padding-top: 30px;
+  font-size: 26px;
+  line-height: 1.25; }
 
 #p1 .container {
   height: 100%; }
-  #p1 .container #content-p1 h1 {
-    font-size: 56px;
-    padding-bottom: 12px; }
-  #p1 .container #content-p1 p {
-    padding-top: 30px;
-    font-size: 26px;
-    line-height: 1.25; }
   #p1 .container #shape-p1 {
     background: black url(/images/grass.jpg) no-repeat;
     background-size: cover;
@@ -84,14 +86,23 @@ body {
     float: right;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 100%); }
 
-#p2 {
-  background: #c1ffaf; }
+#p2 .container {
+  height: 100%; }
+  #p2 .container #shape-p2 {
+    background: black url(/images/grass.jpg) no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 50%;
+    float: left;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0%, 0% 167%); }
 
 #p3 {
-  background: #6cd7ee; }
+  background: #6cd7ee;
+  margin-bottom: 20px; }
 
 #video {
-  height: 100px; }
+  background-color: gray;
+  height: 600px; }
 
 #footer {
   position: absolute;

@@ -123,27 +123,26 @@ body {
 
 .portfolio {
   height: 500px;
-  margin: 20px 0;
+  margin-bottom: 70px;
+}
+
+.content-portfolio {
+  h1 {
+    font-size: 56px;
+    padding-bottom: 12px;
+    display: block;
+  }
+
+  p {
+    padding-top: 30px;
+    font-size: 26px;
+    line-height: 1.25;
+  }
 }
 
 #p1 {
-
   .container {
     height: 100%;
-
-    #content-p1 {
-
-      h1 {
-        font-size: 56px;
-        padding-bottom: 12px;
-      }
-
-      p {
-        padding-top: 30px;
-        font-size: 26px;
-        line-height: 1.25;
-      }
-    }
 
     #shape-p1 {
       background: black url(/images/grass.jpg) no-repeat;
@@ -159,17 +158,36 @@ body {
 }
 
 #p2 {
-  background: rgb(193, 255, 175);
+  .container {
+    height: 100%;
+
+    h1 {
+      // float: right;
+    }
+
+    #shape-p2 {
+      background: black url(/images/grass.jpg) no-repeat;
+      background-size: cover;
+      height:100%;
+      width:50%;
+      float:left;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 0%, 0% 167%);
+      // shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+      // shape-margin: 20px;
+    }
+  }
 }
 
 #p3 {
   background:rgb(108, 215, 238);
+  margin-bottom: 20px;
 }
 
 //video
 
 #video {
-  height: 100px;
+  background-color: gray;
+  height: 600px;
 }
 
 //footer
