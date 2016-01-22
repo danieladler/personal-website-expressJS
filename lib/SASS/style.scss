@@ -1,5 +1,5 @@
 // variables
-
+$body-bottom-margin: 70px;
 
 // whole page
 
@@ -107,7 +107,11 @@ body {
 // bio
 
 #bio {
-  margin: 80px 0;
+  padding: 80px 0;
+  background-color: rgba(219, 219, 219, 0.78);
+  // border-top: 1px solid gray;
+  // border-bottom: 1px solid gray;
+  margin-bottom: $body-bottom-margin;
 
   #bio-text {
     margin: 0 auto;
@@ -123,7 +127,7 @@ body {
 
 .portfolio {
   height: 500px;
-  margin-bottom: 70px;
+  margin-bottom: $body-bottom-margin;
 }
 
 .content-portfolio {
@@ -151,8 +155,8 @@ body {
       width:50%;
       float:right;
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 100%);
-      // shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
-      // shape-margin: 20px;
+      shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+      shape-margin: 20px;
     }
   }
 }
@@ -162,7 +166,11 @@ body {
     height: 100%;
 
     h1 {
-      // float: right;
+      text-align: right;
+    }
+
+    p {
+      text-align: right;
     }
 
     #shape-p2 {
@@ -172,22 +180,37 @@ body {
       width:50%;
       float:left;
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 0%, 0% 167%);
-      // shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
-      // shape-margin: 20px;
+      shape-outside: polygon(0 0, 100% 0, 50% 100%, 30% 100%);
+      shape-margin: 20px;
     }
   }
 }
 
 #p3 {
-  background:rgb(108, 215, 238);
   margin-bottom: 20px;
+
+  .container {
+    height: 100%;
+
+    #shape-p3 {
+      background: black url(/images/grass.jpg) no-repeat;
+      background-size: cover;
+      height:100%;
+      width:50%;
+      float:right;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 100%);
+      shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+      shape-margin: 20px;
+    }
+  }
 }
 
 //video
 
 #video {
-  background-color: gray;
+  background-color: rgb(190, 190, 190);
   height: 600px;
+  // margin-bottom: $body-bottom-margin;
 }
 
 //footer
