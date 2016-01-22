@@ -55,18 +55,34 @@ body {
   padding-bottom: 70px; }
 
 #bio {
-  margin: 20px 0; }
+  margin: 80px 0; }
   #bio #bio-text {
     margin: 0 auto;
     max-width: 900px;
     font-size: 32px;
+    font-weight: bold;
     line-height: 1.25; }
 
 .portfolio {
-  height: 600px; }
+  height: 500px;
+  margin: 20px 0; }
 
-#p1 {
-  background: #ffdcaf; }
+#p1 .container {
+  height: 100%; }
+  #p1 .container #content-p1 h1 {
+    font-size: 56px;
+    padding-bottom: 12px; }
+  #p1 .container #content-p1 p {
+    padding-top: 30px;
+    font-size: 26px;
+    line-height: 1.25; }
+  #p1 .container #shape-p1 {
+    background: black url(/images/grass.jpg) no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 50%;
+    float: right;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 100%); }
 
 #p2 {
   background: #c1ffaf; }
