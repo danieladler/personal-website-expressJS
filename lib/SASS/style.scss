@@ -1,5 +1,8 @@
 // variables
 $body-bottom-margin: 70px;
+$accent-primary: orange;
+$gray-background: rgba(230, 230, 230, 1);
+$gray-border:     rgba(230, 230, 230, 1);
 
 // whole page
 
@@ -16,11 +19,13 @@ body {
 }
 
 #header {
+  border-top: 5px solid $accent-primary;
   background: gray;
   height: 100vh;
 
   #header-content {
     background: url(/images/grass.jpg) no-repeat;
+    // background: url(/images/grass-opaque.jpg) no-repeat;
     background-size: cover;
     height: 100%;
     position: relative;
@@ -28,7 +33,7 @@ body {
 
     h1#title {
       margin-top: 0;
-      padding-top: 20px;
+      padding-top: 30px;
       text-align: center;
       color: white;
       font-size: 72px;
@@ -51,6 +56,7 @@ body {
           font-size: 48px;
           max-width: 900px;
           color: white;
+          padding: 0 10px;
         }
       }
     }
@@ -61,7 +67,6 @@ body {
       left: 0;
       width: 100%;
       text-align: center;
-      color: white;
 
       .header-link {
         padding: 0 20px;
@@ -69,7 +74,7 @@ body {
 
         &:hover {
           text-decoration: none;
-          color: orange;
+          color: $accent-primary;
         }
       }
     }
@@ -79,38 +84,11 @@ body {
   padding-bottom: 70px;
 }
 
-// landing section
-
-// .top-row::before {
-//   content: "";
-//   background: rgb(90, 178, 235);
-//   transform: rotate(-10deg);
-//   margin-top: -170px;
-//   position: absolute;
-//   top: 0;
-//   right: -20%;
-//   left: -20%;
-//   bottom: 750px;
-//   z-index: -1;
-// }
-
-// .title-container {
-//   height: 100px;
-//   color: black;
-//   font-family: "Helvetica";
-//   margin: 0 auto;
-//   width: 800px;
-//   text-align: center;
-//   font-size: 40px;
-// }
-
 // bio
 
 #bio {
   padding: 80px 0;
-  background-color: rgba(219, 219, 219, 0.78);
-  // border-top: 1px solid gray;
-  // border-bottom: 1px solid gray;
+  background-color: $gray-background;
   margin-bottom: $body-bottom-margin;
 
   #bio-text {
@@ -119,9 +97,9 @@ body {
     font-size: 32px;
     font-weight: bold;
     line-height: 1.25;
+		padding: 0 20px;
   }
 }
-
 
 // // portfolio pieces
 
@@ -162,7 +140,12 @@ body {
 }
 
 #p2 {
-  .container {
+	background-color: $gray-background;
+	border-top: 1px solid $gray-border;
+	border-bottom: 1px solid $gray-border;
+	padding: 40px 0;
+
+	.container {
     height: 100%;
 
     h1 {
@@ -211,6 +194,12 @@ body {
   background-color: rgb(190, 190, 190);
   height: 600px;
   // margin-bottom: $body-bottom-margin;
+
+	h1 {
+		padding-top: 300px;
+		text-align: center;
+	}
+
 }
 
 //footer
@@ -257,8 +246,9 @@ body {
         padding: 25px 20px;
 
         &:hover {
-          color: orange;
+          color: $accent-primary;
           text-decoration: none;
+					background: rgba(255, 255, 255, 0.33);
         }
       }
     }
