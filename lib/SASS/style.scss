@@ -1,12 +1,13 @@
 // variables
 $body-bottom-margin: 70px;
-$accent-primary: #ffff65;
-$accent-secondary: #2898e9;
-$gray-background: rgba(230, 230, 230, 1);
-$gray-border:     rgba(230, 230, 230, 1);
+// $accent-primary:     #faf000;
+$accent-primary:     #1dcd00;
+$accent-secondary:   #2898e9;
+$gray-background: 	 rgba(230, 230, 230, 1);
+$gray-border:     	 rgba(230, 230, 230, 1);
 $grass-image: "https://s3-us-west-2.amazonaws.com/dadler-codes/expressJS-development/grass.jpg";
 
-// whole page
+// fonts
 
 @font-face {
 	font-family: 'Print Dashed';
@@ -17,12 +18,36 @@ $grass-image: "https://s3-us-west-2.amazonaws.com/dadler-codes/expressJS-develop
 	     url('/fonts/PrintDashed.svg#PrintDashed') format('svg');
 }
 
+@font-face {
+	font-family: 'Karla', sans-serif;
+}
+
+@font-face {
+	font-family: 'Arvo', serif;
+}
+
+@font-face {
+	font-family: 'Roboto Slab', serif;
+}
+
+// whole page
+
 html,
 body {
 	margin:0;
 	padding:0;
 	height:100%;
+
+	h1, h2 {
+		font-family: 'Roboto Slab', serif;
+	}
+
+	* {
+		font-family: 'Karla', sans-serif;
+	}
+
 }
+
 
 #wrapper {
 	min-height:100%;
@@ -30,7 +55,7 @@ body {
 }
 
 #header {
-  border-top: 5px solid $accent-primary;
+  // border-top: 5px solid $accent-primary;
   background: gray;
   height: 100vh;
 
@@ -65,15 +90,16 @@ body {
         h2#statement {
           margin: 0 auto;
           text-align: center;
-          font-size: 48px;
+          font-size: 54px;
           max-width: 900px;
           color: white;
-          padding: 0 10px;
+          padding: 0px 10px 45px 10px;
+					letter-spacing: 1.15px;
         }
       }
     }
 
-    h5#cta {
+    h3#cta {
       position: absolute;
       bottom: 0;
       left: 0;
