@@ -123,23 +123,15 @@ body {
   .content-portfolio .tag-container {
     position: absolute;
     bottom: 0;
-    margin-bottom: 0px; }
+    margin: 0px 0px;
+    text-align: right; }
     .content-portfolio .tag-container li {
       width: 200px;
       list-style-type: none;
       font-size: 18px;
       display: inline-block;
-      float: left; }
-    .content-portfolio .tag-container li:before {
-      content: '\25A0';
-      display: block;
-      position: relative;
-      max-width: 0;
-      max-height: 0;
-      left: -15px;
-      top: -2.5px;
-      color: #2898e9;
-      font-size: 20px; }
+      float: left;
+      padding-right: 10px; }
 
 #p1 .container {
   height: 100%; }
@@ -167,8 +159,6 @@ body {
     #p2 .container .tag-container {
       right: 0;
       text-align: right; }
-      #p2 .container .tag-container li:before {
-        left: 140px; }
     #p2 .container #shape-p2 {
       background: black url("https://s3-us-west-2.amazonaws.com/dadler-codes/expressJS-development/pp3.png") no-repeat;
       background-size: cover;
