@@ -117,6 +117,8 @@ body {
     padding-top: 30px;
     font-size: 26px;
     line-height: 1.25; }
+    .content-portfolio p .gh-link {
+      font-size: 16px; }
   .content-portfolio .tag-container {
     position: absolute;
     bottom: 0; }
