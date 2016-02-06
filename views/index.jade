@@ -53,9 +53,15 @@ block content
           h1 PetPointer
           p
             #[a(href='http://petpointer.herokuapp.com/') PetPointer]
-            | is a 
-            | 
-            | #[a.gh-link(href="https://github.com/xbell/petpointer") github]
+            |  is like WalkScore, with a focus on pets. It uses a custom
+            | algorithm to calculate the pet-friendliness of any full address 
+            | based on that location's proximity to parks, Yelp rating quality 
+            | of vets and pet stores & services, interior and exterior square 
+            | footage, and noise pollution. Address searches return a Google map, 
+            | unique PetPointer score, and details for how the score was 
+            | calculated. Logged-in users can save locations as favorites, which 
+            | are then viewable on the account page.
+            |   #[a.gh-link(href="https://github.com/xbell/petpointer") github]
           ul.tag-container
             li APIs: Google Maps, Zillow, Yelp
             li Bourbon, Neat, Bitters
