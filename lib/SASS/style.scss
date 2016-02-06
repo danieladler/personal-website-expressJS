@@ -1,4 +1,21 @@
-// variables
+// variables & mixins for responsiveness
+$mobile-width: 480px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin mobile {
+  @media (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$mobile-width + 1}) and (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+// variables for colors and images
 $body-bottom-margin: 70px;
 // $accent-primary:     #faf000;
 $accent-primary:     #1dcd00;
@@ -8,7 +25,6 @@ $gray-border:     	 rgba(230, 230, 230, 1);
 $grass-image: "https://s3-us-west-2.amazonaws.com/dadler-codes/expressJS-development/grass.jpg";
 
 // fonts
-
 @font-face {
 	font-family: 'Print Dashed';
 	src: url('/fonts/PrintDashed.eot');
@@ -31,7 +47,6 @@ $grass-image: "https://s3-us-west-2.amazonaws.com/dadler-codes/expressJS-develop
 }
 
 // whole page
-
 html,
 body {
 	margin:0;
@@ -47,7 +62,6 @@ body {
 	}
 
 }
-
 
 #wrapper {
 	min-height:100%;
@@ -95,6 +109,7 @@ body {
           color: white;
           padding: 0px 10px 45px 10px;
 					letter-spacing: 1.15px;
+					line-height: 1;
         }
       }
     }
@@ -115,6 +130,10 @@ body {
           text-decoration: none;
           color: $accent-primary;
         }
+
+				&:visited {
+					text-decoration: none;
+				}
       }
     }
 }
@@ -129,14 +148,31 @@ body {
   padding: 80px 0;
   background-color: $gray-background;
   margin-bottom: $body-bottom-margin;
+	@include tablet {
+		padding: 40px 0;
+	}
+	@include mobile {
+		padding: 30px 0;
+	}
 
   #bio-text {
-    margin: 0 auto;
-    max-width: 900px;
-    font-size: 32px;
+		text-align: center;
+		margin: 0 auto;
+    max-width: 950px;
+    font-size: 40px;
     font-weight: bold;
     line-height: 1.25;
 		padding: 0 20px;
+		// @media screen and (max-width: 480px) {
+		// 	font-size: 28px;
+		// }
+		@include mobile {
+			font-size: 28px;
+		}
+
+		a:link, a:visited {
+			text-decoration: none;
+		}
   }
 }
 
