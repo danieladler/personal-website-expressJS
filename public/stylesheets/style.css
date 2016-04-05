@@ -174,7 +174,7 @@ body {
   #p3 .container {
     height: 100%; }
     #p3 .container #shape-p3 {
-      background: black url("https://s3-us-west-2.amazonaws.com/dadler-codes/expressJS-development/grass.jpg") no-repeat;
+      background: black url("https://s3-us-west-2.amazonaws.com/dadler-codes/expressJS-development/rc1.png") no-repeat;
       background-size: cover;
       height: 100%;
       width: 50%;
@@ -182,6 +182,8 @@ body {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 100%);
       shape-outside: polygon(0 0, 100% 0, 100% 100%, 50% 100%);
       shape-margin: 20px; }
+  #p3 .content-portfolio ul.tag-container li {
+    text-align: left; }
 
 #video {
   background-color: #bebebe;
