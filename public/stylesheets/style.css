@@ -93,16 +93,6 @@ body {
 #bio {
     padding: 80px 0;
   }
-  @media (min-width: 481px) and (max-width: 768px) {
-    #bio {
-      padding: 40px 0;
-    }
-  }
-  @media (max-width: 480px) {
-    #bio {
-      padding: 30px 0;
-    }
-  }
 
   .content-bio {
     margin: 0 auto;
@@ -116,11 +106,7 @@ body {
     font-weight: bold;
     line-height: 1.25;
   }
-    @media (max-width: 480px) {
-      #bio #bio-text {
-        font-size: 28px;
-      }
-    }
+
     #bio #bio-text a:link, #bio #bio-text a:visited {
       text-decoration: none;
     }
@@ -136,9 +122,52 @@ body {
     margin: 10px 40px;
   }
 
+  @media (max-width: 970px) {
+    #bio #bio-text {
+      width: 100%;
+      text-align: center;
+    }
+
+    #bio #bio-image {
+      display: none;
+    }
+  }
+
+  @media (min-width: 769px) {
+    #bio {
+      padding: 40px;
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: 768px) {
+    /*#bio {
+      padding: 40px 0;
+    }*/
+
+    #bio #bio-text {
+      /*font-size: 28px;*/
+      padding: 0px 20px;
+      text-align: center;
+      display: block;
+      width: 100%;
+    }
+  }
+  @media (max-width: 480px) {
+    #bio {
+      padding: 30px 0;
+    }
+
+    #bio #bio-text {
+      padding: 0px 20px;
+      text-align: center;
+      display: block;
+      width: 100%;
+    }
+  }
+
 #portfolio-intro {
     padding: 40px 0;
-    background: #5a952c;
+    background: hsl(83, 73%, 32%);
   }
   #portfolio-intro-text {
     text-align: center;
