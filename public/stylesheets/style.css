@@ -187,6 +187,31 @@ body {
       padding-right: 10px;
     }
 
+#p0 .container {
+  height: 100%;
+  padding-top: 70px;
+}
+  #p0 .container h1 {
+    text-align: right;
+  }
+  #p0 .container p {
+    text-align: right;
+  }
+  #p0 .container .tag-container {
+    right: 0;
+    text-align: right; }
+
+  #p0 .container #shape-p0 {
+    background: black no-repeat;
+    background-size: cover;
+    background-position-x: -14px;
+    height: 100%;
+    width: 50%;
+    float: left;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0%, 0% 167%);
+    shape-outside: polygon(0 0, 100% 0, 50% 100%, 30% 100%);
+  }
+
 #p1 .container {
   height: 100%;
 }
