@@ -8,7 +8,7 @@ block content
       h1#title      dadler codes
       #statement-container
         #helper
-          h2#statement  Full Stack Ruby Developer
+          h2#statement  Full Stack Web Developer
       h3#cta
         a(href="#about").header-link     about
         a(href="#portfolio").header-link portfolio
@@ -17,38 +17,41 @@ block content
     #bio
       a#about.smooth
       p#bio-text
-        | My name is Daniel Adler, but you can call me dadler.
-        |  I'm a web developer #[a(href="code.builders") honing my craft] in the Pacific Northwest.
-        |  I enjoy #[a(href="https://www.instagram.com/p/3UosiRgCiO/") cats],
-        |  #[a(href="http://www.kcrw.com/music") thoughtfully ] curated #[a(href="http://soulection.com/radio/") music],
-        |  and homemade kimchi.
+        | My name is Daniel Adler, but you can call me dadler. 
+        br
+        br
+        | I'm a web developer with #[a(href="http://code.builders") honing my craft] in Portland, OR.
+        br
+        br
+        | While working in finance & operations in the education & nonprofit sectors, I became obsessed with building more efficient, user-friendly digital experiences. 
+        | This led me to #[a(href="http://www.svcseattle.com/classes/web-design-and-ux/") study UX], which in turn led me to pursue frontend web design.
+        br
+        br
+        | I enjoy #[a(href="https://www.instagram.com/p/3UosiRgCiO/") cats], 
+        | #[a(href="http://www.kcrw.com/music") thoughtfully ] curated #[a(href="http://soulection.com/radio/") DJ sets], 
+        | and homemade kimchi.
 
     #portfolio-intro
       p#portfolio-intro-text
         | Here's what I've been working on lately:
     
-    #p1.portfolio
-      a#portfolio.smooth
+    #p3.portfolio
       .container
-        #shape-p1
+        #shape-p3
         .content-portfolio
-          h1 PhotoSquid
-          p #[a(href='http://image-rater-dadler.herokuapp.com/') PhotoSquid] 
-            | is an image-sharing and -rating platform. Users can create 
-            | accounts and upload photos into a personal library. A photo can be 
-            | rated and commented on by any user except its creator. Users can 
-            | view and rate a random photo via the navbar but will never see a 
-            | photo they have already rated. Users are notified via e-mail when 
-            | one of their photos has been rated. All photos are sorted by 
-            | overall rating scores on the rankings page. 
-            | #[a.gh-link(href="https://github.com/danieladler/image-rater") github]
-
+          h1 Ready.city
+          p  
+             | Ready.city walks helps users prepare for natural disasters by
+             | walking them through a simple assessment of their home,
+             | emergency gear, dependents and contacts; from this input it generates
+             | a custom to-do list with preparations unique to their situation.
+             | In future iterations, users will be able to share preparation plans
+             | and budget how much money and time will be needed to create a 
+             | completed preparednesss plan. #[a.gh-link(href="https://github.com/danieladler/earthquake-prep") github]
           ul.tag-container
-            li #[i.fa.fa-thumbs-up] Image uploading w/ CarrierWave
-            li #[i.fa.fa-thumbs-up] Image storage w/ AWS/S3
-            li #[i.fa.fa-thumbs-up] User notification emails w/ Rails mailers
-
-
+            li #[i.fa.fa-thumbs-up] Polymorphic Association & JSONB
+            li #[i.fa.fa-thumbs-up] React.js
+    
     #p2.portfolio
       .container
         #shape-p2
@@ -69,24 +72,26 @@ block content
             li #[i.fa.fa-thumbs-up] Bourbon, Neat, Bitters
             li #[i.fa.fa-thumbs-up] SASS mixins
 
-    #p3.portfolio
+    #p1.portfolio
+      a#portfolio.smooth
       .container
-        #shape-p3
+        #shape-p1
         .content-portfolio
-          h1 Ready.city
-          p  
-             | Ready.city walks helps users prepare for natural disasters by
-             | walking them through a simple assessment of their home,
-             | emergency gear, dependents and contacts; from this input it generates
-             | a custom to-do list with preparations unique to their situation.
-             | In future iterations, users will be able to share preparation plans
-             | and budget how much money and time will be needed to create a 
-             | completed preparednesss plan. #[a.gh-link(href="https://github.com/danieladler/earthquake-prep") github]
+          h1 PhotoSquid
+          p #[a(href='http://image-rater-dadler.herokuapp.com/') PhotoSquid] 
+            | is an image-sharing and -rating platform. Users can create 
+            | accounts and upload photos into a personal library. A photo can be 
+            | rated and commented on by any user except its creator. Users can 
+            | view and rate a random photo via the navbar but will never see a 
+            | photo they have already rated. Users are notified via e-mail when 
+            | one of their photos has been rated. All photos are sorted by 
+            | overall rating scores on the rankings page. 
+            | #[a.gh-link(href="https://github.com/danieladler/image-rater") github]
+
           ul.tag-container
-            li #[i.fa.fa-thumbs-up] Polymorphic Association & JSONB
-            li #[i.fa.fa-thumbs-up] React.js
-
-
+            li #[i.fa.fa-thumbs-up] Image uploading w/ CarrierWave
+            li #[i.fa.fa-thumbs-up] Image storage w/ AWS/S3
+            li #[i.fa.fa-thumbs-up] User notification emails w/ Rails mailers
   #footer
     #footer-main
       #footer-left
