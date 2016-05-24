@@ -21,11 +21,11 @@ block content
           | My name is Daniel Adler, but you can call me dadler. 
           br
           br
-          | I'm a web developer with #[a(href="http://code.builders") honing my craft] in Portland, OR.
+          | I'm a web developer honing my craft in Portland, OR.
           br
           br
           | While working in finance & operations in the education & nonprofit sectors, I became obsessed with building more efficient, user-friendly digital experiences. 
-          | This led me to #[a(href="http://www.svcseattle.com/classes/web-design-and-ux/") study UX], which in turn led me to pursue frontend web design.
+          | This led me to #[a(href="http://www.svcseattle.com/classes/web-design-and-ux/") study UX], which in turn led me to #[a(href="http://code.builders") pursues] frontend web design.
           br
           br
           | I enjoy #[a(href="https://www.instagram.com/p/3UosiRgCiO/") cats], 
@@ -38,20 +38,22 @@ block content
         | Here's what I've been working on lately:
     
     #p3.portfolio
+      a#portfolio.smooth
       .container
         #shape-p3
         .content-portfolio
           h1 Ready.city
           p  
-             | Ready.city walks helps users prepare for natural disasters by
-             | walking them through a simple assessment of their home,
+             | [Ready.city] simplifies the daunting task of preparing for natural disasters. 
+             | Users fill out a simple assessment of their home,
              | emergency gear, dependents and contacts; from this input it generates
              | a custom to-do list with preparations unique to their situation.
              | In future iterations, users will be able to share preparation plans
              | and budget how much money and time will be needed to create a 
-             | completed preparednesss plan. #[a.gh-link(href="https://github.com/danieladler/earthquake-prep") github]
+             | completed preparednesss plan. #[a.gh-link(href="https://github.com/danieladler/earthquake-prep") Source Code]
           ul.tag-container
-            li #[i.fa.fa-thumbs-up] Polymorphic Association & JSONB
+            li #[i.fa.fa-thumbs-up] Rails
+            li #[i.fa.fa-thumbs-up] Polymorphic Association
             li #[i.fa.fa-thumbs-up] React.js
     
     #p2.portfolio
@@ -59,23 +61,21 @@ block content
         #shape-p2
         .content-portfolio
           h1 PetPointer
-          p #[a(href='http://petpointer.herokuapp.com/') PetPointer]
-            |  is like WalkScore, but with a focus on pets. It uses a custom
-            | algorithm to calculate the pet-friendliness of any full address 
+          p #[a(href='http://petpointer.herokuapp.com/') PetPointer] 
+            | is like WalkScore for pet owners. It uses a custom
+            | algorithm to calculate the pet-friendliness of an address 
             | based on that location's proximity to parks, Yelp rating quality 
             | of vets and pet stores & services, interior and exterior square 
             | footage, and noise pollution. Address searches return a Google map, 
             | unique PetPointer score, and details for how the score was 
-            | calculated. Logged-in users can save locations as favorites, which 
-            | are then viewable on the account page.
-            |   #[a.gh-link(href="https://github.com/xbell/petpointer") github]
+            | calculated. Logged-in users can save their favorite locations.
+            |   #[a.gh-link(href="https://github.com/xbell/petpointer") Source Code]
           ul.tag-container
             li #[i.fa.fa-thumbs-up] APIs: Google Maps, Zillow, Yelp
             li #[i.fa.fa-thumbs-up] Bourbon, Neat, Bitters
             li #[i.fa.fa-thumbs-up] SASS mixins
 
     #p1.portfolio
-      a#portfolio.smooth
       .container
         #shape-p1
         .content-portfolio
@@ -88,7 +88,7 @@ block content
             | photo they have already rated. Users are notified via e-mail when 
             | one of their photos has been rated. All photos are sorted by 
             | overall rating scores on the rankings page. 
-            | #[a.gh-link(href="https://github.com/danieladler/image-rater") github]
+            | #[a.gh-link(href="https://github.com/danieladler/image-rater") Source Code]
 
           ul.tag-container
             li #[i.fa.fa-thumbs-up] Image uploading w/ CarrierWave

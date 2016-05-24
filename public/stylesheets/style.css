@@ -92,7 +92,6 @@ body {
 
 #bio {
     padding: 80px 0;
-    background-color: #e6e6e6;
   }
   @media (min-width: 481px) and (max-width: 768px) {
     #bio {
@@ -113,11 +112,9 @@ body {
   #bio #bio-text {
     display: inline-block;
     width: 60%;
-    /*text-align: center;*/
     font-size: 22px;
     font-weight: bold;
     line-height: 1.25;
-    /*padding: 0 20px; */
   }
     @media (max-width: 480px) {
       #bio #bio-text {
@@ -131,6 +128,8 @@ body {
   #bio #bio-image {
     display: inline-block;
     background-color: hsl(192, 39%, 60%);
+    background: white url("https://s3-us-west-2.amazonaws.com/dadler-codes/expressJS-development/DWA.profile.smile-crop.JPG") no-repeat;
+    background-size: cover;
     width: 30%;
     height: 280px;
     border-radius: 160px;
@@ -138,7 +137,8 @@ body {
   }
 
 #portfolio-intro {
-    padding: 80px 0;
+    padding: 40px 0;
+    background-color: #e6e6e6;
   }
   #portfolio-intro-text {
     text-align: center;
@@ -232,6 +232,7 @@ body {
     }
 
 #p3 {
+  padding-top: 70px;
   margin-bottom: 70px;
 }
   #p3 .container {
