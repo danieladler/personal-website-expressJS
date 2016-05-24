@@ -151,7 +151,6 @@ body {
   }
   .content-portfolio p {
     padding-top: 20px;
-    font-size: 26px;
     line-height: 1.25;
   }
     .content-portfolio p .gh-link {
@@ -234,6 +233,39 @@ body {
     }
   #p3 .content-portfolio ul.tag-container li {
     text-align: left;
+  }
+
+  /* Media queries for portfolio sections */
+
+  @media (min-width: 769px) {
+    .content-portfolio {
+      font-size: 26px;
+      margin: 0 40px;
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: 768px) {
+    .portfolio {
+      height: 300px;
+    }
+
+    .content-portfolio {
+      padding: 40px 0;
+      margin: 0 20px;
+      font-size: 24px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .portfolio {
+      height: 250px;
+    }
+
+    .content-portfolio {
+      padding: 30px 0;
+      margin: 0 20px;
+      font-size: 20px;
+    }
   }
 
 #video {
