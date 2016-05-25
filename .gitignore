@@ -3,3 +3,4 @@
 /pulic/fonts
 /views/index1.jade
 .DS_store
+.env

@@ -9,6 +9,7 @@
   "author": "Daniel Adler",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^2.0.0",
     "express": "^4.13.3",
     "jade": "^1.11.0"
   },
