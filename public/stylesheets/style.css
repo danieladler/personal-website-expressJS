@@ -353,8 +353,14 @@ body {
     #p1 .container ul.tag-container,
     #p2 .container ul.tag-container,
     #p3 .container ul.tag-container {
-      text-align: center;
+      text-align: left;
     }
+    /*#p0 .container ul.tag-container li,
+    #p1 .container ul.tag-container li,
+    #p2 .container ul.tag-container li,
+    #p3 .container ul.tag-container li {
+      width: 100%;
+    }*/
   }
 
   @media (min-width: 992px) {
