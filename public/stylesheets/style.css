@@ -188,9 +188,17 @@ body {
     padding-top: 20px;
     line-height: 1.25;
   }
-    .content-portfolio p .gh-link {
-      font-size: 16px;
-    }
+
+  .content-portfolio .small-note {
+    padding-top: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+
+  .content-portfolio p .gh-link {
+    font-size: 16px;
+  }
+
   .content-portfolio ul.tag-container {
     padding-top: 25px;
     margin: 0px;

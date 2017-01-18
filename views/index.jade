@@ -37,11 +37,31 @@ block content
         #bio-image
 
     #portfolio-intro
+      a#portfolio.smooth
       p#portfolio-intro-text
         | Here's what I've been working on lately:
     
+    
+    #p3.portfolio
+      .container
+        #shape-p3
+        .content-portfolio
+          h1 Ready City
+          p  
+             | #[a(href="https://ready-city-stage.herokuapp.com/") Ready City] simplifies 
+             | the daunting task of preparing for natural disasters. 
+             | Users fill out a simple assessment about their home, dependents and contacts, 
+             | which generates a personalized list of preparations.
+             | In future iterations, users will be able to share preparation plans
+             | and budget how much money and time will be needed to create a 
+             | complete preparednesss plan. #[a.gh-link(href="https://github.com/danieladler/ready-city") Source Code]
+             p.small-note NB: An old version of Ready City can be found #[a(href="http://www.ready.city") here].
+          ul.tag-container
+            li #[i.fa.fa-thumbs-up] Rails
+            li #[i.fa.fa-thumbs-up] Webpack
+            li #[i.fa.fa-thumbs-up] React/Redux
+    
     #p0.portfolio
-      a#portfolio.smooth
       .container
         #shape-p0
         .content-portfolio
@@ -59,44 +79,6 @@ block content
               li #[i.fa.fa-thumbs-up] JQuery
               li #[i.fa.fa-thumbs-up] Modular React frontend w/ ES6 conventions
               
-    
-    #p3.portfolio
-      .container
-        #shape-p3
-        .content-portfolio
-          h1 Ready.city
-          p  
-             | #[a(href="http://www.ready.city") Ready.city] simplifies the daunting task of preparing for natural disasters. 
-             | Users fill out a simple assessment of their home,
-             | emergency gear, dependents and contacts; from this input it generates
-             | a custom to-do list with preparations unique to their situation.
-             | In future iterations, users will be able to share preparation plans
-             | and budget how much money and time will be needed to create a 
-             | completed preparednesss plan. #[a.gh-link(href="https://github.com/danieladler/earthquake-prep") Source Code]
-          ul.tag-container
-            li #[i.fa.fa-thumbs-up] Ruby on Rails
-            li #[i.fa.fa-thumbs-up] Polymorphic Association
-            li #[i.fa.fa-thumbs-up] React.js
-    
-    #p2.portfolio
-      .container
-        #shape-p2
-        .content-portfolio
-          h1 PetPointer
-          p #[a(href='https://petpointer.herokuapp.com/') PetPointer] 
-            | is like WalkScore for pet owners. Its API uses a custom
-            | algorithm to calculate the pet-friendliness of an address 
-            | based on that location's proximity to parks, Yelp rating quality 
-            | of vets and pet stores & services, interior and exterior square 
-            | footage, and noise pollution. Address searches return a Google map, 
-            | unique PetPointer score, and details for how the score was 
-            | calculated. Logged-in users can save their favorite locations.
-            |   #[a.gh-link(href="https://github.com/xbell/petpointer") Source Code]
-          ul.tag-container
-            li #[i.fa.fa-thumbs-up] APIs: Google Maps, Zillow, Yelp
-            li #[i.fa.fa-thumbs-up] Bourbon, Neat, Bitters
-            li #[i.fa.fa-thumbs-up] SASS mixins
-
     #p1.portfolio
       .container
         #shape-p1
@@ -116,6 +98,26 @@ block content
             li #[i.fa.fa-thumbs-up] Image uploading w/ CarrierWave
             li #[i.fa.fa-thumbs-up] Image storage w/ AWS/S3
             li #[i.fa.fa-thumbs-up] User notification emails w/ Rails mailers
+  
+    #p2.portfolio
+      .container
+        #shape-p2
+        .content-portfolio
+          h1 PetPointer
+          p #[a(href='https://petpointer.herokuapp.com/') PetPointer] 
+            | is like WalkScore for pet owners. Its API uses a custom
+            | algorithm to calculate the pet-friendliness of an address 
+            | based on that location's proximity to parks, Yelp rating quality 
+            | of vets and pet stores & services, interior and exterior square 
+            | footage, and noise pollution. Address searches return a Google map, 
+            | unique PetPointer score, and details for how the score was 
+            | calculated. Logged-in users can save their favorite locations.
+            |   #[a.gh-link(href="https://github.com/xbell/petpointer") Source Code]
+          ul.tag-container
+            li #[i.fa.fa-thumbs-up] APIs: Google Maps, Zillow, Yelp
+            li #[i.fa.fa-thumbs-up] Bourbon, Neat, Bitters
+            li #[i.fa.fa-thumbs-up] SASS mixins
+  
   #footer
     #footer-main
       #footer-left
